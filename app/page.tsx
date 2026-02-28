@@ -20,6 +20,8 @@ export default function Home() {
 
   <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
 
+  <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+
   <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
 
   <a
@@ -29,8 +31,7 @@ export default function Home() {
   >
     Resume
   </a>
-
-  <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+  
 </div>
   </div>
 </nav>
@@ -122,34 +123,37 @@ export default function Home() {
 <section id="contact" className="mt-20 mb-20 scroll-mt-24 text-center">
   <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
 
-  <div className="flex justify-center gap-10 text-4xl text-gray-700">
+  <div className="flex justify-center gap-10 text-4xl">
 
-    <a
-      href="mailto:23211a05g1@gmail.com"
-      className="hover:text-red-500 transition transform hover:scale-110"
-    >
-      <FaEnvelope />
-    </a>
+  {/* Email */}
+  <a
+    href="mailto:23211a05g1@gmail.com"
+    className="text-red-500 hover:scale-110 transition"
+  >
+    <FaEnvelope />
+  </a>
 
-    <a
-      href="https://www.linkedin.com/in/rajasri-lakkaram-377252293/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-blue-600 transition transform hover:scale-110"
-    >
-      <FaLinkedin />
-    </a>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/rajasri-lakkaram-377252293/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:scale-110 transition"
+  >
+    <FaLinkedin />
+  </a>
 
-    <a
-      href="https://github.com/23211A05G1"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-black transition transform hover:scale-110"
-    >
-      <FaGithub />
-    </a>
+  {/* GitHub */}
+  <a
+    href="https://github.com/23211A05G1"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-black hover:scale-110 transition"
+  >
+    <FaGithub />
+  </a>
 
-  </div>
+</div>
 </section>
 
     </main>
