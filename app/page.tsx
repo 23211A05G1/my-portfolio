@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiPython } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 function SkillCard({ icon, name }: { icon: React.ReactNode; name: string }) {
   return (
     <div className="tilt-card bg-white/70 backdrop-blur-md shadow-md border border-gray-200 rounded-xl p-6 flex flex-col items-center gap-3 transition">
@@ -16,6 +17,10 @@ export default function Home() {
 
     <div className="space-x-6 text-gray-700 font-medium">
   <a href="#about" className="hover:text-blue-500 transition">About</a>
+
+  <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
+
+  <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
 
   <a
     href="/resume.pdf"
@@ -114,35 +119,36 @@ export default function Home() {
 </section>
 
 {/* CONTACT */}
-<section id="contact" className="mt-20 mb-20 scroll-mt-24">
-  <h2 className="text-3xl font-semibold">Contact</h2>
+<section id="contact" className="mt-20 mb-20 scroll-mt-24 text-center">
+  <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
 
-  <div className="mt-4 space-y-2">
-    <p>Email: 23211a05g1@gmail.com</p>
+  <div className="flex justify-center gap-10 text-4xl text-gray-700">
 
-    <p>
-      LinkedIn:
-      <a
-  href="https://www.linkedin.com/in/rajasri-lakkaram-377252293/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-blue-400 ml-2 underline"
->
-  View Profile
-</a>
-    </p>
+    <a
+      href="mailto:23211a05g1@gmail.com"
+      className="hover:text-red-500 transition transform hover:scale-110"
+    >
+      <FaEnvelope />
+    </a>
 
-    <p>
-      GitHub:
-      <a
-  href="https://github.com/23211A05G1"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-blue-400 ml-2 underline"
->
-  View GitHub
-</a>
-    </p>
+    <a
+      href="https://www.linkedin.com/in/rajasri-lakkaram-377252293/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-600 transition transform hover:scale-110"
+    >
+      <FaLinkedin />
+    </a>
+
+    <a
+      href="https://github.com/23211A05G1"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-black transition transform hover:scale-110"
+    >
+      <FaGithub />
+    </a>
+
   </div>
 </section>
 
