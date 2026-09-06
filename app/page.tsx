@@ -1,6 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
-import { SiNextdotjs, SiMongodb, SiPython } from "react-icons/si";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { SiNextdotjs, SiMongodb, SiPython, SiPostgresql } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaEnvelope, FaGoogle } from "react-icons/fa";
 function SkillCard({ icon, name }: { icon: React.ReactNode; name: string }) {
   return (
     <div className="tilt-card bg-white/70 backdrop-blur-md shadow-md border border-gray-200 rounded-xl p-6 flex flex-col items-center gap-3 transition">
@@ -44,7 +44,7 @@ export default function Home() {
   </h1>
 
   <p className="mt-6 text-gray-500 text-lg max-w-2xl">
-    Developer passionate about building scalable web apps and intelligent systems.
+    Developer passionate about building scalable web applications and practical solutions.
   </p>
 </section>
 
@@ -52,8 +52,7 @@ export default function Home() {
 <section id="about" className="mt-20 max-w-3xl scroll-mt-24">
   <h2 className="text-3xl font-semibold">About Me</h2>
   <p className="mt-4 text-lg">
-    I’m a B.Tech CSE student passionate about building real-world applications,
-    exploring fintech, and creating intelligent digital systems.
+    I’m a B.Tech CSE student focused on building practical applications and developing scalable solutions to real-world problems.
   </p>
 </section>
 
@@ -64,15 +63,17 @@ export default function Home() {
   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
     <SkillCard icon={<FaJava size={28} />} name="Java" />
-    <SkillCard icon={<SiPython size={28} />} name="Python" />
-    <SkillCard icon={<FaHtml5 size={28} />} name="HTML" />
-    <SkillCard icon={<FaCss3Alt size={28} />} name="CSS" />
-    <SkillCard icon={<FaJs size={28} />} name="JavaScript" />
-    <SkillCard icon={<FaReact size={28} />} name="React" />
-    <SkillCard icon={<SiNextdotjs size={28} />} name="Next.js" />
-    <SkillCard icon={<FaNodeJs size={28} />} name="Node.js" />
-    <SkillCard icon={<SiMongodb size={28} />} name="MongoDB" />
-
+<SkillCard icon={<SiPython size={28} />} name="Python" />
+<SkillCard icon={<FaHtml5 size={28} />} name="HTML" />
+<SkillCard icon={<FaCss3Alt size={28} />} name="CSS" />
+<SkillCard icon={<FaJs size={28} />} name="JavaScript" />
+<SkillCard icon={<FaReact size={28} />} name="React" />
+<SkillCard icon={<SiNextdotjs size={28} />} name="Next.js" />
+<SkillCard icon={<FaNodeJs size={28} />} name="Node.js" />
+<SkillCard icon={<SiMongodb size={28} />} name="MongoDB" />
+<SkillCard icon={<SiPostgresql size={28} />} name="PostgreSQL" />
+<SkillCard icon={<FaGithub />} name="Git / GitHub" />
+<SkillCard icon={<FaGoogle />} name="Gemini AI" />
   </div>
 </section>
 
@@ -83,37 +84,48 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-6 mt-6">
 
     {/* Project 1 */}
-    <div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
-      <h3 className="text-xl font-bold">Military Tank Detection Using YOLOv8</h3>
-      <p className="mt-2 text-gray-400">
-        YOLOv8-based satellite imagery detection system with 85%+ accuracy.
-      </p>
-      <p className="text-sm mt-2 text-blue-400">
-        Tech: YOLOv8, Python, OpenCV
-      </p>
-    </div>
+<div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
+  <h3 className="text-xl font-bold">NexaStudy – Academic Productivity & Study Management Platform</h3>
+  <p className="mt-2 text-gray-400">
+    Full-stack study platform with authentication, academic tracking, analytics, and progress insights.
+  </p>
+  <p className="text-sm mt-2 text-blue-400">
+    Tech: Node.js, Express.js, MongoDB, JWT, REST APIs
+  </p>
+</div>
 
-    {/* Project 2 */}
-    <div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
-      <h3 className="text-xl font-bold">BudgetBuddy — Personal Expense Tracker</h3>
-      <p className="mt-2 text-gray-400">
-        Full-stack finance tracker managing 500+ transactions with authentication and analytics dashboards.
-      </p>
-      <p className="text-sm mt-2 text-blue-400">
-        Tech: React, Node.js, MongoDB
-      </p>
-    </div>
+{/* Project 2 */}
+<div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
+  <h3 className="text-xl font-bold">BudgetBuddy – AI-Powered Personal Finance Management System</h3>
+  <p className="mt-2 text-gray-400">
+    Personal finance platform for expense tracking, budgeting, analytics, and AI-powered insights.
+  </p>
+  <p className="text-sm mt-2 text-blue-400">
+    Tech: React.js, TypeScript, Supabase, PostgreSQL, Gemini AI
+  </p>
+</div>
 
-    {/* Project 3 */}
-    <div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
-      <h3 className="text-xl font-bold">Voice AI Copilot</h3>
-      <p className="mt-2 text-gray-400">
-        Voice-enabled AI assistant with 90%+ speech accuracy reducing manual task time by 40%.
-      </p>
-      <p className="text-sm mt-2 text-blue-400">
-        Tech: Python, OpenAI API, Flask
-      </p>
-    </div>
+{/* Project 3 */}
+<div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
+  <h3 className="text-xl font-bold">EmotionSense – AI-Based Multimodal Emotion Detection & Wellbeing Platform</h3>
+  <p className="mt-2 text-gray-400">
+    Multimodal platform for face, voice, and text emotion detection with mood journaling.
+  </p>
+  <p className="text-sm mt-2 text-blue-400">
+    Tech: React.js, TypeScript, Python, FastAPI, OpenCV, DeepFace
+  </p>
+</div>
+
+{/* Project 4 */}
+<div className="border border-gray-800 bg-[var(--card)] p-5 rounded-xl shadow-lg">
+  <h3 className="text-xl font-bold">Military Tank Detection using YOLOv8 and Satellite Imagery</h3>
+  <p className="mt-2 text-gray-400">
+    YOLOv8-based tank detection system using satellite imagery and 1,200+ annotated images.
+  </p>
+  <p className="text-sm mt-2 text-blue-400">
+    Tech: YOLOv8, Python, OpenCV
+  </p>
+</div>
 
   </div>
 
